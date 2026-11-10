@@ -41,6 +41,59 @@
 .electric-snout,.bank-nose{background:#ffd3a0!important;border-color:#185f9d!important}
 .electric-foot,.bank-feet{background:#1b7fbe!important}
 .hero-caption{color:#135b91!important}
+</style><style>
+/* BLIPPI WONDERS: complete visual overhaul, preserving game logic */
+:root{font-family:system-ui,-apple-system,sans-serif;background:#e9f9ff;color:#064778}
+body{background:linear-gradient(180deg,#c5f2ff 0%,#f1fbff 40%,#fff6e9 100%);color:#074d7c}
+.app-shell{max-width:560px}
+.hero{background:linear-gradient(155deg,#078dd5 0%,#42c8f5 55%,#a4ecff 100%)!important;border:5px solid #fff!important;border-radius:32px!important;box-shadow:0 9px 0 #0a77b9,0 16px 26px #006fa52a!important;overflow:hidden}
+.hero:before{content:'☁️';position:absolute;top:115px;left:7%;font-size:55px;opacity:.9}
+.hero:after{content:'☁️';position:absolute;top:180px;right:5%;font-size:46px;opacity:.9}
+.logo{font-weight:1000!important;color:#fff!important;text-shadow:0 4px 0 #0870b5,3px 6px 0 #ff8c21!important;letter-spacing:.2px}
+.hud-pill{background:#fff!important;border:3px solid #ff9d25!important;color:#07528b!important;box-shadow:0 4px 0 #e17a10}
+.hud-pill strong{color:#f17c0b!important}
+.landscape{opacity:.45;filter:hue-rotate(140deg)}
+.hero-caption{color:#075c92!important;background:#fff8!important;border-radius:14px;font-weight:900}
+.parchment,.card{background:#fff!important;border:3px solid #1da8df!important;border-radius:25px!important;box-shadow:0 7px 0 #b7e8f8!important}
+.month strong,h2{color:#0769a7!important}
+.day{border-radius:12px!important}.day.yes,.yes{background:#9bedb5!important}.day.no,.no{background:#ffb6ae!important}
+.day.today{outline:3px solid #ff9125!important}
+button,.btn{border-radius:15px!important}
+.primary,.selected,.tabs button.selected{background:#ff9126!important;color:#fff!important;border:2px solid #e56e00!important;box-shadow:0 4px 0 #ba5c04!important}
+.tabs{background:#e1f7ff!important;border-top:4px solid #1497d2!important}
+.tabs button{background:#fff!important;color:#086aa4!important;border:2px solid #1a9ed7!important}
+.decision-card,.sad-card{background:#fff!important}
+.decision-art{background:#e4f8ff;border-radius:25px;padding:22px}
+.sad-card{background:linear-gradient(#e3f5ff,#fff)!important}
+.stats .card{background:#e6f8ff!important;border-color:#ff9b24!important}
+.stats strong{color:#e67c12!important}
+.toss-arena{background:linear-gradient(#c8f3ff,#fff)!important;border:4px solid #138ed1!important}
+.arena-title{color:#0874b7!important}.arena-subtitle{color:#e47b0c!important}
+.summary-mascot{font-size:78px}
+.mascot-wrap{top:171px!important;width:230px;height:225px}
+.blippi-character{position:relative;width:205px;height:235px;margin:auto;filter:drop-shadow(0 8px 4px #075b8544);z-index:2}
+.blippi-hat{position:absolute;z-index:7;top:1px;left:41px;width:122px;height:57px;background:#0c9bdb;border:5px solid #07588b;border-radius:70% 70% 14% 14%;transform:rotate(-5deg);display:grid;place-items:center;color:#ff9b23;font-size:32px;font-weight:1000}
+.blippi-hat:after{content:'';position:absolute;width:143px;height:14px;background:#0878bb;border:4px solid #07588b;bottom:-9px;left:-9px;border-radius:50%}
+.blippi-hair{position:absolute;z-index:4;top:39px;left:47px;width:111px;height:68px;background:#9c5127;border-radius:50%}
+.blippi-head{position:absolute;z-index:5;top:49px;left:42px;width:121px;height:116px;background:#ffd1a2;border:4px solid #bc7a49;border-radius:46% 46% 49% 49%}
+.blippi-glasses{position:absolute;top:27px;left:6px;display:flex;gap:5px;align-items:center}
+.blippi-glasses i{width:48px;height:43px;border:8px solid #f68a18;border-radius:46% 46% 50% 50%;background:#fef8d5aa;position:relative;transform:rotate(-7deg)}
+.blippi-glasses i+ i{transform:rotate(7deg)}
+.blippi-glasses i:after{content:'';position:absolute;width:9px;height:14px;background:#19456a;border-radius:50%;top:10px;left:17px}
+.blippi-nose{position:absolute;top:68px;left:53px;width:14px;height:16px;border-radius:50%;background:#e8a876}
+.blippi-smile{position:absolute;top:84px;left:40px;width:40px;height:15px;border-bottom:5px solid #8d482d;border-radius:0 0 50% 50%}
+.blippi-shirt{position:absolute;z-index:2;top:148px;left:30px;width:146px;height:83px;background:#0b9edb;border:5px solid #075c91;border-radius:36px 36px 17px 17px;text-align:center;padding-top:36px;font-size:13px;color:white;font-weight:1000}
+.blippi-bow{position:absolute;z-index:6;top:144px;left:76px;background:#ff8b19;color:#fff;width:54px;height:27px;clip-path:polygon(0 0,50% 30%,100% 0,100% 100%,50% 70%,0 100%);text-align:center;font-size:21px}
+.blippi-arms i{position:absolute;z-index:1;top:165px;width:34px;height:58px;background:#0c91d1;border:4px solid #075c91;border-radius:30px}
+.blippi-arms i:first-child{left:12px;transform:rotate(32deg)}.blippi-arms i:last-child{right:11px;transform:rotate(-32deg)}
+.sad-mascot{height:280px}.sad-mascot .blippi-character{transform:scale(.98);animation:sadSway 2.8s infinite}
+.sad-mascot .blippi-smile{border-bottom:0;border-top:5px solid #8d482d;border-radius:50% 50% 0 0;top:95px}
+.bank{top:19%!important;width:205px!important;height:204px!important;filter:drop-shadow(0 15px 8px #065b9550)!important}
+.backpack-handle{position:absolute;top:0;left:74px;width:60px;height:43px;border:12px solid #07649d;border-radius:22px}
+.backpack-body{position:absolute;inset:22px 9px 0;background:linear-gradient(125deg,#38c7ff,#0783c6 75%);border:7px solid #075f9b;border-radius:45px 45px 32px 32px;box-shadow:inset -15px -12px #056ba544}
+.backpack-slot{position:absolute;top:-10px;left:49px;width:79px;height:15px;border-radius:30px;background:#073d65;border:4px solid #ff9a23;box-shadow:0 0 0 4px #fff}
+.backpack-star{position:absolute;top:30px;left:58px;font-size:55px;color:#ff9b22;text-shadow:2px 3px #d56b07}
+.backpack-pocket{position:absolute;bottom:12px;left:25px;width:124px;height:57px;background:#ff9d25;border:4px solid #c76a07;border-radius:17px;color:white;font-weight:1000;font-size:15px;line-height:19px;display:grid;place-content:center;text-align:center;text-shadow:1px 2px #b75a04}
 </style></head><body><main class="app-shell">
 <div class="hero"><div class="canopy canopy-left">🌿</div><div class="canopy canopy-right">🌿</div><div class="logo">🧡 La Hucha de Thiago 💙</div><div class="hud"><div class="hud-pill"><span>🪙 Total</span><strong id="heroTotal">0 €</strong></div><div class="hud-pill"><span>🔥 Racha récord</span><strong id="heroStreak">0 días</strong></div></div>
 <div class="landscape"><div class="mountain mountain-a"></div><div class="mountain mountain-b"></div><div class="grass grass-left">🌿</div><div class="grass grass-right">🌳</div></div>
@@ -49,8 +102,8 @@
 <section id="calendar"><div class="parchment"><div class="month"><button id="prev" aria-label="Mes anterior">❮</button><strong id="month"></strong><button id="next" aria-label="Mes siguiente">❯</button></div><div class="week"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div id="days" class="days"></div><div class="legend"><span><i class="dot y"></i>Conseguido</span><span><i class="dot n"></i>No conseguido</span><span><i class="dot"></i>Sin registrar</span></div></div></section>
 <section id="decision" class="hide"><div class="parchment decision-card"><button class="back-link" id="decisionBack">❮ Volver al calendario</button><h2 id="dateLabel"></h2><p>¿Thiago ha conseguido su moneda hoy?</p><div class="decision-art">🧡🪙💙</div><div class="decision-buttons"><button class="good" id="yes">🌟 ¡Sí, lo ha conseguido!</button><button class="bad" id="no">💔 Hoy no</button></div><button class="muted" id="clear">Dejar sin registrar</button></div></section>
 <section id="sad" class="hide"><div class="parchment sad-card"><h2>💛 ¡Mañana será otro día!</h2><p>Hoy no hay moneda, pero siempre hay otra oportunidad.</p><div class="sad-mascot"><div class="electric-mascot"><div class="electric-tail"></div><div class="electric-ear ear-left"></div><div class="electric-ear ear-right"></div><div class="electric-body"><div class="electric-eye eye-left"></div><div class="electric-eye eye-right"></div><div class="electric-cheek cheek-left"></div><div class="electric-cheek cheek-right"></div><div class="electric-snout"><b>● ●</b></div><div class="electric-mouth"></div><div class="electric-slot"></div></div><div class="electric-foot foot-left"></div><div class="electric-foot foot-right"></div></div></div><button class="primary" id="sadBack">Volver al calendario</button><button class="muted" id="sadChange">Cambiar resultado</button></div></section>
-<section id="game" class="hide"><div class="card toss-arena" id="arena"><div class="arena-title">✨ ¡Moneda ganada! ✨</div><div class="arena-subtitle">¡Lanza tu euro a la hucha aventurera!</div><div class="starscape"><i>✦</i><i>✧</i><i>✦</i><i>✧</i></div><div class="bank" id="bank"><div class="bank-ear left"></div><div class="bank-ear right"></div><div class="bank-tail"></div><div class="bank-body"><div class="bank-eye left"></div><div class="bank-eye right"></div><div class="bank-cheek left"></div><div class="bank-cheek right"></div><div class="bank-nose"><span>● ●</span></div><div class="bank-slot"></div></div><div class="bank-feet"></div></div><div id="effects" class="effects"></div><div class="launch-lane"><div id="tossCoin" class="toss-coin"><span>1€</span></div></div><div id="tossMessage" class="toss-message">☝️ Arrastra la moneda hacia la ranura</div><button id="soundToggle" class="sound-toggle" type="button">🔊 Sonido activado</button></div><button id="back" class="primary" style="width:100%;margin-top:15px">Volver al calendario</button></section>
-<section id="summary" class="hide"><div class="parchment"><h2>🏆 Tus logros</h2><div class="stats"><div class="card"><div>🪙</div><strong id="total">0 €</strong><p>Total acumulado</p></div><div class="card"><div>🔥</div><strong id="streak">0</strong><p>Récord de días seguidos</p></div></div><div class="summary-mascot">🧡🎩💙</div><p class="center">¡Sigue llenando tu hucha!</p></div><div class="parchment"><h2>💾 Guardar tus datos</h2><p class="small">☁️ Los registros se sincronizan con Google Sheets. Puedes exportar una copia por seguridad.</p><p id="syncStatus" role="status" aria-live="polite">⏳ Pendiente de conectar la hoja de Thiago</p><button id="syncNow">🔄 Sincronizar ahora</button><div id="migrationBox" class="hide"><p class="small">Hay registros antiguos guardados en este dispositivo. Puedes incorporarlos a la hoja compartida sin sustituir los días que ya existan.</p><button id="migrate">📤 Incorporar mis registros anteriores</button></div><button id="export">⬇ Exportar copia</button><label class="file">Importar copia <input id="import" type="file" accept="application/json"></label></div></section>
+<section id="game" class="hide"><div class="card toss-arena" id="arena"><div class="arena-title">✨ ¡Moneda ganada! ✨</div><div class="arena-subtitle">¡Lanza tu euro a la mochila de aventuras!</div><div class="starscape"><i>✦</i><i>✧</i><i>✦</i><i>✧</i></div><div class="bank" id="bank"><div class="bank-ear left"></div><div class="bank-ear right"></div><div class="bank-tail"></div><div class="bank-body"><div class="bank-eye left"></div><div class="bank-eye right"></div><div class="bank-cheek left"></div><div class="bank-cheek right"></div><div class="bank-nose"><span>● ●</span></div><div class="bank-slot"></div></div><div class="bank-feet"></div></div><div id="effects" class="effects"></div><div class="launch-lane"><div id="tossCoin" class="toss-coin"><span>1€</span></div></div><div id="tossMessage" class="toss-message">☝️ ¡Lanza la moneda a la mochila!</div><button id="soundToggle" class="sound-toggle" type="button">🔊 Sonido activado</button></div><button id="back" class="primary" style="width:100%;margin-top:15px">Volver al calendario</button></section>
+<section id="summary" class="hide"><div class="parchment"><h2>🏆 Tus logros</h2><div class="stats"><div class="card"><div>🪙</div><strong id="total">0 €</strong><p>Total acumulado</p></div><div class="card"><div>🔥</div><strong id="streak">0</strong><p>Récord de días seguidos</p></div></div><div class="summary-mascot">🧢🧡👓</div><p class="center">¡Sigue llenando tu hucha!</p></div><div class="parchment"><h2>💾 Guardar tus datos</h2><p class="small">☁️ Los registros se sincronizan con Google Sheets. Puedes exportar una copia por seguridad.</p><p id="syncStatus" role="status" aria-live="polite">⏳ Conectando con Google Sheets…</p><button id="syncNow">🔄 Sincronizar ahora</button><div id="migrationBox" class="hide"><p class="small">Hay registros antiguos guardados en este dispositivo. Puedes incorporarlos a la hoja compartida sin sustituir los días que ya existan.</p><button id="migrate">📤 Incorporar mis registros anteriores</button></div><button id="export">⬇ Exportar copia</button><label class="file">Importar copia <input id="import" type="file" accept="application/json"></label></div></section>
 </main><nav class="tabs"><button data-tab="calendar" class="selected">📅 Calendario</button><button data-tab="summary">🏆 Resumen</button></nav>
 <script>
 const KEY='hucha-thiago-v1',API='https://script.google.com/macros/s/AKfycbxkyYkrwp5n3XIJkj-E-S8y9MsQ_A3sMnofj5xBEL8JirNmhQ5zn9tiT6hqOCSDUD_Zzw/exec';let data={},legacy={};try{legacy=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{};let view=new Date(),selected=null,ready=false,busy=false;const $=id=>document.getElementById(id);const pad=n=>String(n).padStart(2,'0');const key=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());const parse=s=>new Date(Number(s.slice(0,4)),Number(s.slice(5,7))-1,Number(s.slice(8,10)));function status(msg){$('syncStatus').textContent=msg}
